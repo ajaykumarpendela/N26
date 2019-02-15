@@ -1,0 +1,6 @@
+<messaging:emailTemplate subject="{!$Label.ServiceEmailSubject}"   relatedToType="Contact" language="{!relatedTo.language__c}"
+>
+<messaging:plainTextEmailBody >
+Hey {!relatedTo.FirstName}, {!$Label.ServiceEmailMessage} http://n26.com/survey/{!relatedTo.Id}
+</messaging:plainTextEmailBody>
+</messaging:emailTemplate>

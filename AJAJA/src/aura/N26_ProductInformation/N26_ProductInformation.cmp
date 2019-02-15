@@ -1,0 +1,44 @@
+<!--*******************************************************************************************************************
+* @Author: Ajay
+* @Date: 13/02/2019
+* @Name: ProductInformation Lightning component
+* @Description: Displays Lightning card with cost_per_Calendar_Month, ATM_Fee_in_other_currencies, card_Replacement_Cost 
+                information on Case Layout based on Case contacts Product and Home COuntry
+* @Change History: 
+*************************************************************************************************************************-->
+<aura:component controller="N26_ProductInformation" implements="force:lightningQuickAction,force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,forceCommunity:availableForAllPageTypes,force:lightningQuickAction" access="global" >
+	<aura:attribute name="recordId" type="String" />
+     <aura:handler name="init" value="{!this}" action="{!c.initAction}" />
+    <aura:attribute name="wrapperList" type="List" />
+    <lightning:card variant="Narrow" title="Product Information" iconName="standard:product">
+        <aura:set attribute="actions">
+            <lightning:buttonIcon   disabled="true" iconName="utility:down" variant="border-filled" alternativeText="Show More"/>
+        </aura:set>
+        <p class="slds-p-horizontal_small">
+            <table class="slds-table slds-table--bordered slds-table--cell-buffer" role="grid">
+        
+        <tbody>
+            <aura:iteration items="{!v.wrapperList}" var="product" indexVar="indexVal">
+                <aura:if isTrue="{!if(indexVal==0,TRUE,FALSE)}"> <tr>
+                    <td><b>Product Name: {!product.productName}</b></td>
+                    <td><b>Home Country: {!product.homeCountry}</b></td>
+                </tr></aura:if>
+                <tr>
+                    <td><b>Cost per Calendar Month</b></td>
+                    <td>{!product.cost_per_Calendar_Month}</td>
+                </tr>
+                <tr>
+                    <td><b>ATM Fee in other currencies</b></td>
+                    <td>{!product.ATM_Fee_in_other_currencies}</td>
+                </tr>
+                <tr>
+                    <td><b>Card Replacement Cost</b></td>
+                    <td>{!product.card_Replacement_Cost}</td>
+                </tr>
+                <br></br>
+            </aura:iteration>
+        </tbody>
+    </table>
+        </p>
+    </lightning:card>
+</aura:component>
