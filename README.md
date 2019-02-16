@@ -7,7 +7,7 @@ surveys to customers with a survey_date__c before now. On successful send, the
 survey_date__c should be set to null.
 
 * **Case Study 2:**
-Display the customer’s product information to the agent whilst they’re interacting.
+Display the customer’s product information to the agent while they’re interacting.
 
 **Note:** Files location - [/N26/AJAJA/src](https://github.com/ajaykumarpendela/N26/tree/master/AJAJA/src)
 
