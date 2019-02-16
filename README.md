@@ -81,7 +81,7 @@ Run the test classes to know the codecoverage
 * Open create case in Lightning view, you can see ProductInformation lightning card in right side panel, 
 * It displays all Cost per month, ATM Fee and Card replacent informaion.
 
-######**Note:** Refer word document as attached 
+**Note:** Refer word document as attached 
 
 ## Built With
 
