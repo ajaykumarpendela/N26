@@ -73,8 +73,8 @@ Run the test classes to know the codecoverage
 
 ***Test senario for Case study 2:***
 * Create a Product as 'Standard', Pricebook as 'DE', 
-* Add pricebook entry with EUR currency in standard pricebook
-* Add pricebookentry with EUR currecny in custom 'DE' pricebook
+* From Standard pricebook related list on Product, add pricebook entry with EUR currency in standard pricebook
+* From Pricebook related list on Product, add pricebookentry with EUR currecny in custom 'DE' pricebook and make sure to fill these field values Cost_per_Calendar_Month__c, ATM_Fee_in_other_currencies__c, Card_Replacement_Cost__c
 * Create a contact by filling Produt__c as 'Standard' product and Home_country__c as 'DE' pricebook
 * Create a case by filling above created Contact.
 
