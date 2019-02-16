@@ -48,10 +48,12 @@ Import/Pull the Git Code to Salesforce
 - Enable the Translate in Salesforce
 - Add German language in Trnaslation
 
-Deploy listed components into Salesforce and run the test senarioes
+**Deploy listed components into Salesforce** 
 
 **Post Deploymnet Steps**
 - Add the Lightning component(B26_ProdutInformation) on Case Layout using Lightning App Builder  
+
+**Run the test senarioes**
 
 ## Test
 
@@ -62,9 +64,11 @@ Run the test classes to know the codecoverage
 * Create a contact populating survey date(before today), email address and language as 'en'
 * Repeat the above step with language as 'de'
 * Execute the batch class
+
 *Expected Result:* 
 * Batch class will send an email to customers in their languages, first will recive in English, second customer will receive in German
 * Check again the contacts records, where survey date should be null
+
 
 *Test senario for Case study 2:*
 * Create a Product as 'Standard', Pricebook as 'DE', 
@@ -72,6 +76,7 @@ Run the test classes to know the codecoverage
 * Add pricebookentry with EUR currecny in custom 'DE' pricebook
 * Create a contact by filling Produt__c as 'Standard' product and Home_country__c as 'DE' pricebook
 * Create a case by filling above created Contact.
+
 *Expected Result:* 
 * Open create case in Lightning view, you can see ProductInformation lightning card in right side panel, 
 * It displays all Cost per month, ATM Fee and Card replacent informaion.
