@@ -23,8 +23,8 @@ Import/Pull the Git Code to Salesforce
 **Case study 1**
 
 ```
-1.Custom fields on Contact object: survey_date__c, language__c
-2.Custom labels: ServiceEmailMessage, ServiceEmailSubject
+1.Custom fields on Contact object: **survey_date__c, language__c**
+2.Custom labels: *ServiceEmailMessage, ServiceEmailSubject*
 3.Visualforce template name: ServiceSurveyEmail
 4.Apex batch class: N26_Contact_Survey_Batch
 5.Apex batch test class: DataFactory, N26_Contact_Survey_Test
