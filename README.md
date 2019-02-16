@@ -44,13 +44,13 @@ Import/Pull the Git Code to Salesforce
 
 ## Deployment
 
-** Pre Deployment Steps:**
+**Pre Deployment Steps:**
 - Enable the Translate in Salesforce
 - Add German language in Trnaslation
 
 Deploy listed components into Salesforce and run the test senarioes
 
-** Post Deploymnet Steps**
+**Post Deploymnet Steps**
 - Add the Lightning component(B26_ProdutInformation) on Case Layout using Lightning App Builder  
 
 ## Test
@@ -59,7 +59,7 @@ Run the test classes to know the codecoverage
 **Note:** Used Datafactory (apex class) for creating test classes.
 
 *Test senario for case study 1:*
-- Create a contact populating survey date(before today), email address and language as 'en'
+* Create a contact populating survey date(before today), email address and language as 'en'
 * Repeat the above step with language as 'de'
 * Execute the batch class
 *Expected Result:* 
